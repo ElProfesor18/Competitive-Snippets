@@ -105,6 +105,8 @@ lli power(lli x,lli y,lli p){lli res=1; x=x%p;while(y>0){if(y&1) res=(res*x)%p;y
 // Euclidean gcd
 lli gcd(lli a, lli b) { if (a==0) return b; return gcd(b % a, a);}
 
+bool isPalindrome(string s) { return s == reverse(all(s));}  
+
 // CODE BEGINS :
 void solve()
 {
