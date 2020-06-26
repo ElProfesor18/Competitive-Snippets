@@ -29,3 +29,22 @@ lli modInverse(lli a, lli m)
         return res;
     } 
 } 
+
+// Modular inverse of every number modulo m in O(m)
+vl modInverse_1_to_m(lli m)
+{
+    vl inv(m, -1);
+    inv[1] = 1;
+    for(lli i = 2; i < m; ++i)
+        inv[i] = (m - (m/i) * inv[m%i] % m) % m;
+
+    return inv;
+}
+
+
+
+
+
+
+
+
