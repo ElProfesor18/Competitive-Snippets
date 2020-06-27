@@ -14,10 +14,6 @@ bool isBipartite(lli src)
         lli u = q.front(); 
         q.pop(); 
   
-        if (G[u][u] == 1) 
-        return false;  
-  
-        for (int v = 0; v < V; ++v) 
         for(auto it : adj[i])           
         { 
             if (colorArr[it] == -1) 
@@ -33,9 +29,3 @@ bool isBipartite(lli src)
    
     return true; 
 } 
-
-
-
-
-
-
