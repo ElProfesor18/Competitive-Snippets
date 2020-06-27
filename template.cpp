@@ -87,6 +87,9 @@ const ldb PI = acos(-1.0);
 #define mod 1000000007
 #define mod2 998244353
 
+// I/O from a file.
+#define file freopen("input.txt", "r" stdin); freopen("output.txt", "w", stdout);
+
 // Printing Data :
 #define pvec(v) forz(i,v.si) cout<<v[i]<<" "; cout<<endl;
 #define parr(arr, n) forz(i,n) cout<<arr[i]<<" "; cout<<endl;
@@ -110,7 +113,9 @@ bool isPalindrome(string s) { string t = s; reverse(all(t)); return s == t;}
 // CODE BEGINS :
 void solve()
 {
-    
+	// file;
+
+	
 }
 
 int main()
